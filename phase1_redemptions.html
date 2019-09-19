@@ -168,7 +168,7 @@ A program that prepares individuals to provide professional chef and related coo
             </div>
         </div>
     </div>
-                                        <div id="mybutton">
+                                    <div id="mybutton" style="display:none;">
                                     <button class="feedback">
                                     Ask me a question, here are some FAQs
                                     <br>
@@ -182,11 +182,38 @@ A program that prepares individuals to provide professional chef and related coo
                                     <div class="box">
                                     <p>What are points?</p>
                                     </div>
-                                    <input class="input is-rounded is-large" type="text" placeholder="hello!">
+                                    <input class="input is-rounded" type="text" placeholder="hello!">
+                                    <br><br><br><br>
                                     </button>
                                     </div>
-
+                                    <div id="mybutton">
+                                    <div onclick="toggle()" class="feedback button">
+                                    <span class="icon">
+                                        <i class="fa fa-microphone" aria-hidden="true"></i>
+                                    </span>
+                                    </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script async type="text/javascript" src="js/bulma.js"></script>
+    <script>
+    function toggle() {
+    var x = document.getElementById("mybutton");
+    var y = document.getElementById("mic");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+        y.style.display = "none";
+    } else {
+        x.style.display = "none";
+        y.style.display = "block";
+    }
+    }
+    </script>
 </body>
 
 </html>
